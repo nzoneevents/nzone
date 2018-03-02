@@ -1,0 +1,485 @@
+/****************************
+GENERAL STYLES
+*****************************/
+
+body {
+    font-family: "Varela Round", sans-serif;
+    background-color: #fff;
+}
+
+.vert-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.grey {
+    background-color: #edeff0;
+}
+
+
+/****************************
+NAVIGATION
+*****************************/
+
+#desktop {
+    display: none;
+}
+
+.nav-container {
+    width: 100%;
+    border-bottom: 1px solid #e9f0f3;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav {
+    height: 100px;
+    position: relative;
+}
+
+.nav h4 {
+    color: #f7781d;
+    padding-bottom: 0;
+    margin-bottom: 8px;
+}
+
+/*.nav-text {
+    min-width: 100%;
+}*/
+
+.options {
+    display: none;
+}
+
+.options-mobile li {
+    list-style: none;
+    display: inline;
+}
+
+.options-mobile li:nth-child(-n+3) {
+    padding-right: 13px;
+}
+
+.options-mobile li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+.options-mobile li a:hover {
+    color: #f7781d;
+}
+
+@media (min-width: 500px) {
+    .nav-text {
+        min-width: 500px;
+    }
+}
+
+@media (min-width: 980px) {
+    .options-mobile {
+        display: none;
+    }
+
+    #desktop {
+        display: block;
+    }
+
+    .nav {
+        /*border: 1px solid black;*/
+        height: 90px;
+        position: relative;
+    }
+
+    .options {
+        float: right;
+        display: block;
+    }
+
+    .options li {
+        list-style: none;
+        display: inline;
+    }
+
+    .options li:nth-child(-n+2) {
+        padding-right: 18px;
+    }
+
+    .options li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1.15em;
+    }
+
+    .options li a:hover {
+        color: #f7781d;
+    }
+}
+
+
+/****************************
+JUMBOTRON
+*****************************/
+.jumbotron {
+    height: 300px;
+    width: 100%;
+    background-color: #bd5ae7;
+    border-bottom: solid 1px #e9f0f3;
+    padding-top: 100px;
+}
+
+.jumbotron h2 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.jumbotron-announcements {
+    height: 150px;
+    width: 100%;
+    background: url("https://static.teamtreehouse.com/assets/layouts/header-bg-79bb2f87d039deac52bbbba1e0530455.svg");
+    background-color: white;
+    margin-bottom: 30px;
+    border-bottom: solid 1px #e9f0f3;
+    padding-top: 100px;
+}
+
+.jumbotron-announcements h2 {
+    color: #333;
+    font-weight: 400;
+}
+
+
+/****************************
+HOME PAGE CONTENT
+*****************************/
+
+.about p {
+    margin-bottom: 10px;
+}
+
+.about h4 {
+    margin: 20px 0 5px;
+}
+
+.mission h4 {
+    margin: 20px 0 5px;
+}
+
+.mission p {
+    margin-bottom: 10px;
+}
+
+.curr h4 {
+    margin: 20px 0 5px;
+}
+
+.curr p {
+    margin-bottom: 10px;
+}
+
+p:last-of-type {
+    margin-bottom: 15px;
+}
+
+/*BY DEFAULT BUTTON*/
+
+.mission {
+    display: none;
+}
+
+.curr {
+    display: none;
+}
+
+/****************************
+ANNOUNCEMENTS
+*****************************/
+
+.box {
+    height: auto;
+    background-color: #616161;
+    border-radius: 7px;
+    margin: 0 auto 18px;
+}
+
+.box h4 {
+    color: white;
+    padding: 16px 16px 3px 16px;
+    margin-bottom: 0;
+    line-height: 120%;
+}
+
+
+.box p {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 14px 9px 16px;
+    line-height: 140%;
+}
+
+
+/****************************
+CARD
+*****************************/
+
+.card {
+    height: auto;
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.01), 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    background-color: white;
+    margin: 0.5rem 0 2rem auto;
+    /*border: 1px solid #e9f0f3;*/
+}
+
+@media (min-width: 550px) {
+    .card {
+        margin: 0.5rem 0 2rem 4%;
+    }
+}
+
+.card-content {
+    border-bottom: 1px solid #e9f0f3;
+}
+
+.card-content h5 {
+    color: #f7781d;
+    margin-bottom: 2px;
+    padding: 15px 16px 5px 16px;
+    line-height: 105%;
+}
+
+.card-content p {
+    margin: 0;
+    padding: 0 16px 10px 16px;
+}
+
+.card-action p {
+    margin: 0;
+    padding: 10px 16px 10px 16px;
+}
+
+
+/****************************
+SIGN-UP
+*****************************/
+
+#cody {
+    display: none;
+}
+
+@media (min-width: 500px) {
+    #promise {
+        min-width: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    #promise {
+        min-width: 50%;
+    }
+
+    #cody {
+        margin-left: 2%;
+        display: block;
+        position: relative;
+    }
+
+    .sign-up {
+        padding: 30px;
+        border-radius: 5px;
+        text-align: left;
+        background-color: white;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    .code-text {
+        font-family: "Source Code Pro", monospace;
+        font-size: 1.35em;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/****************************
+TYPED.JS
+*****************************/
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.green {
+    color: #14CC78;
+}
+
+.orange {
+    color: #FFB419;
+}
+
+.d-purple {
+    color: #8312B2;
+}
+
+
+/****************************
+BUTTONS
+*****************************/
+
+.page-buttons {
+    position: relative;
+    text-align: center;
+    /*border: 1px solid black;*/
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+.my-button {
+    margin: 0;
+    display: block;
+    border: 1px solid #e9f0f3;
+    border-right: none;
+    border-left: none;
+    padding: 20px 18px;
+    position: relative;
+    bottom: 22px;
+    background-color: white;
+
+    /*NO SELECT STUFF*/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;
+}
+
+.my-button:first-of-type {
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    border-top: none;
+}
+
+.my-button:last-of-type {
+    position: relative;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+    border-bottom: none;
+}
+
+.my-button:nth-of-type(2) {
+    padding-right: 15px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.my-button p {
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    font-size: 1.1em;
+    color: #14CC78;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+}
+
+.my-button:hover {
+    cursor: pointer;
+}
+
+.my-button:hover p {
+    color: #0E8C52;
+}
+
+
+.current-button {
+    background-color: #14CC78;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.current-button p {
+    color: white;
+}
+
+.current-button:hover p {
+    color: white;
+}
+
+@media (min-width: 550px) {
+    .page-buttons {
+        max-width: 100%;
+    }
+
+    .my-button {
+        display: inline;
+        border: 2px solid #14CC78;
+        padding: 12px 22px;
+        box-shadow: none;
+        bottom: 14px;
+    }
+
+    .my-button:first-of-type {
+        position: relative;
+        border-radius: 5px 0 0 5px;
+        border: 2px solid #14CC78;
+    }
+
+    .my-button:last-of-type {
+        position: relative;
+        border-radius: 0 5px 5px 0;
+        box-shadow: none;
+        border: 2px solid #14CC78;
+    }
+
+    .my-button:nth-of-type(2) {
+        padding-right: 15px;
+        border: 2px solid #14CC78;
+        border-right: none;
+        border-left: none;
+    }
+
+    .my-button p {
+        display: inline;
+    }
+    .current-button {
+        background-color: #14CC78;
+    }
+
+    .current-button p {
+        color: white;
+    }
+}
